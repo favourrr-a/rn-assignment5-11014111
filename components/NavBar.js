@@ -23,6 +23,7 @@ export default function NavBar() {
   return (
     <Tab.Navigator
     screenOptions={({ route }) => ({
+      headerShown: false,
       tabBarIcon: ({ focused }) => {
         let icon;
 
