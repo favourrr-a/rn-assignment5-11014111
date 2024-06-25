@@ -2,10 +2,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Image } from 'react-native';
 
 // Screens
-import HomeScreen from './home-screen/HomeScreen';
-import SettingsScreen from './settings-screen/SettingsScreen';
-import MyCardsScreen from './my-cards-screen/MyCardsScreen';
-import StatisticsScreen from './statistics-screen/StatisticsScreen';
+import HomeScreen from '../screens/HomeScreen';
+import SettingsScreen from '../screens/SettingsScreen';
+import MyCardsScreen from '../screens/MyCardsScreen';
+import StatisticsScreen from '../screens/StatisticsScreen';
 
 // Tab Icons
 import homeIcon from '../assets/nav-bar-icons/home.png';
