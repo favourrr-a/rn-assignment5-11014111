@@ -1,5 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Image } from 'react-native';
+import { useContext } from 'react';
+import { AppContext } from '../store/context';
 
 // Screens
 import HomeScreen from '../screens/HomeScreen';
@@ -17,13 +19,20 @@ import homeIconFocused from '../assets/nav-bar-icons/home-focused.png';
 import myCardsIconFocused from '../assets/nav-bar-icons/my-cards-focused.png';
 import statisticsIconFocused from '../assets/nav-bar-icons/statistics-focused.png';
 
+// Styles
+import { navBarStyles } from '../styles/nav-bar-styles/navBarStyles';
+
 const Tab = createBottomTabNavigator();
 
 export default function NavBar() {
+  const { theme } = useContext(AppContext);
+  const navBarThemedStyle = navBarStyles(theme);
+
   return (
     <Tab.Navigator
     screenOptions={({ route }) => ({
       headerShown: false,
+      tabBarStyle: navBarThemedStyle.container,
       tabBarIcon: ({ focused }) => {
         let icon;
 
