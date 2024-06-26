@@ -1,6 +1,7 @@
 import { View } from 'react-native';
 import { useContext } from 'react';
 import { AppContext } from '../store/context';
+import { ScrollView } from 'react-native';
 
 // Custom components 
 import Card from '../components/home-screen/Card';
@@ -18,11 +19,11 @@ export default function HomeScreen() {
 
   return (
     <View style = {appThemedStyle.container}>
-      <View style = {homeScreenThemedStyle.container}>
+      <ScrollView vertical showsVerticalScrollIndicator = {false} style = {homeScreenThemedStyle.container}>
         <ProfileAndSearch />
         <Card />
         <Operations />
-      </View>
+      </ScrollView>
     </View>
   );
 }
