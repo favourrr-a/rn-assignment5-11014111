@@ -21,10 +21,10 @@ The app is some kind of financial app
 
 ### Components Structure And Usage
 - #### HomeScreen
-    - Card: Made up of the app name, 'Jobizz'
-    - Operations: Welcome message
-    - ProfileAndSearch: Form where the user enters their name and email. Name and email are passed as props to the home page
-    - Transactions: Other ways of logging in     
+    - Card
+    - Operations
+    - ProfileAndSearch
+    - Transactions
 - #### SettingsScreen
     - Settings categories
     - ThemeSetting
@@ -36,14 +36,6 @@ The app is some kind of financial app
 - #### Other screens
     - MyCardsScreen
     - StatisticsScreen
-
-
-### App features
-- User login with name and email
-- Display user profile with name and email
-- Search for jobs
-- View featured jobs
-- View popular jobs
 
 ### Technology Stack Used
 
