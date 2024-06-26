@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { AppContext } from '../store/context';
 
 // Custom components 
+import Card from '../components/home-screen/Card';
 import ProfileAndSearch from '../components/home-screen/ProfileAndSearch';
 
 // Styles
@@ -18,6 +19,7 @@ export default function HomeScreen() {
     <View style = {appThemedStyle.container}>
       <View style = {homeScreenThemedStyle.container}>
         <ProfileAndSearch />
+        <Card />
       </View>
     </View>
   );
