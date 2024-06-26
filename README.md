@@ -11,8 +11,8 @@ The app is some kind of financial app
 - [`assets`](./assets/): Contains images and other assets used in the application, such as logos and icons
 - [`components`](./components/): Contains all reusable components used across different parts of the application. Each component is organized in a relevant subfolder
 - [`pages`](./screens/): Contains the main screens (home, my cards, statistics, settings)
-- [`styles`](./styles/): Contains styling files for the components and pages
-- [`App.js`](./App.js): Main entry point of the app. It sets up the root component and navigation
+- [`styles`](./styles/): Contains styling files for the components and screens
+- [`App.js`](./App.js): Main entry point of the app. It sets up the navbar component for navigating between screens
 - [`app.json`](./app.json): Configuration file for the Expo project, defining project settings and metadata
 - [`babel.config.js`](./babel.config.js): Babel configuration file, used to specify how JavaScript code is compiled
 - [`package-lock.json`](./package-lock.json): Automatically generated file that describes the exact tree of dependencies that were installed for the project
