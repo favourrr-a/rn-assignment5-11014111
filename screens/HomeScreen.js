@@ -5,6 +5,7 @@ import { AppContext } from '../store/context';
 // Custom components 
 import Card from '../components/home-screen/Card';
 import ProfileAndSearch from '../components/home-screen/ProfileAndSearch';
+import Operations from '../components/home-screen/Operations';
 
 // Styles
 import { appStyles } from '../styles/appStyles';
@@ -20,6 +21,7 @@ export default function HomeScreen() {
       <View style = {homeScreenThemedStyle.container}>
         <ProfileAndSearch />
         <Card />
+        <Operations />
       </View>
     </View>
   );
