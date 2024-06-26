@@ -7,6 +7,7 @@ import { ScrollView } from 'react-native';
 import Card from '../components/home-screen/Card';
 import ProfileAndSearch from '../components/home-screen/ProfileAndSearch';
 import Operations from '../components/home-screen/Operations';
+import Transactions from '../components/home-screen/Transactions';
 
 // Styles
 import { appStyles } from '../styles/appStyles';
@@ -23,6 +24,7 @@ export default function HomeScreen() {
         <ProfileAndSearch />
         <Card />
         <Operations />
+        <Transactions />
       </ScrollView>
     </View>
   );
